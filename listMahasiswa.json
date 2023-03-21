@@ -15,6 +15,16 @@
       "hp": "08953628393990",
       "angkatan": 2020,
       "status": "Aktif"
+    },
+    {
+      "userId": 1,
+      "id": 1679381814069,
+      "NIM": "204172090",
+      "nama": "Rafa",
+      "alamat": "Sumper Pucung",
+      "hp": "089111222333",
+      "angkatan": "2022",
+      "status": "Putus Studi"
     }
   ]
 }

@@ -72,7 +72,8 @@ class Mahasiswa extends Component {
     return (
       <div className="post-mahasiswa">
         <div className="form pb-2 border-bottom">
-          <h3>Tambah Mahasiswa</h3>
+          <h2 className="row justify-content-center">Tambah Data Mahasiswa</h2>
+          <br />
           <div className="form-group row">
             <label htmlFor="NIM" className="col-sm-2 col-form-label">
               NIM
@@ -86,7 +87,8 @@ class Mahasiswa extends Component {
                 onChange={this.handleTambahMahasiswa}
               ></textarea>
             </div>
-          </div>
+          </div>{" "}
+          <br />
           <div className="form-group row">
             <label htmlFor="nama" className="col-sm-2 col-form-label">
               Nama
@@ -100,7 +102,8 @@ class Mahasiswa extends Component {
                 onChange={this.handleTambahMahasiswa}
               ></textarea>
             </div>
-          </div>
+          </div>{" "}
+          <br />
           <div className="form-group row">
             <label htmlFor="alamat" className="col-sm-2 col-form-label">
               Alamat
@@ -114,6 +117,7 @@ class Mahasiswa extends Component {
               ></textarea>
             </div>
           </div>
+          <br />
           <div className="form-group row">
             <label htmlFor="hp" className="col-sm-2 col-form-label">
               No Handphone
@@ -127,45 +131,64 @@ class Mahasiswa extends Component {
                 onChange={this.handleTambahMahasiswa}
               ></textarea>
             </div>
-          </div>
+          </div>{" "}
+          <br />
           <div className="form-group row">
             <label htmlFor="angkatan" className="col-sm-2 col-form-label">
               Angkatan
             </label>
             <div className="col-sm-3">
-              <input
-                type="number"
-                className="form-control"
+              <select
+                htmlFor="angkatan"
+                class="form-control"
                 name="angkatan"
                 id="angkatan"
-                rows="1"
                 onChange={this.handleTambahMahasiswa}
-              />
+              >
+                <option disabled selected value>
+                  Pilih Angkatan
+                </option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+              </select>
             </div>
-          </div>
+          </div>{" "}
+          <br />
           <div className="form-group row">
             <label htmlFor="status" className="col-sm-2 col-form-label">
               Status
             </label>
             <div className="col-sm-3">
-              <textarea
+              <select
                 className="form-control"
                 name="status"
                 id="status"
-                rows="1"
                 onChange={this.handleTambahMahasiswa}
-              ></textarea>
+              >
+                <option disabled selected value>
+                  Pilih Status Mahasiswa
+                </option>
+                <option value="Aktif">Aktif</option>
+                <option value="Cuti">Cuti</option>
+                <option value="Putus Studi">Putus Studi</option>
+              </select>
             </div>
-          </div>
+          </div>{" "}
+          <br />
           <button
             type="submit"
             className="btn btn-secondary"
             onClick={this.handleTombolSimpan}
           >
             Simpan
-          </button>
+          </button>{" "}
+          <br /> <br />
         </div>
-        <h2>Daftar Mahasiswa</h2>
+        <h2 className="row justify-content-center">Daftar Mahasiswa</h2> <br />
         {this.state.listMahasiswa.map((mahasiswa) => {
           // looping dan masukkan untuk setiap data yang ada di listMahasiswa ke variabel mahasiswa
           return (
