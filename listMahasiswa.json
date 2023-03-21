@@ -1,0 +1,20 @@
+{
+  "mahasiswa": [
+    {
+      "NIM": 2041720001,
+      "nama": "Muhammad Rizki Mubarok",
+      "alamat": "Jl. Galunggung Malang",
+      "hp": "0893482023249",
+      "angkatan": 2020,
+      "status": "Aktif"
+    },
+    {
+      "NIM": 2041720002,
+      "nama": "Menur Joni",
+      "alamat": "Jl. Kembang Turi No. 9 ",
+      "hp": "08953628393990",
+      "angkatan": 2020,
+      "status": "Aktif"
+    }
+  ]
+}
